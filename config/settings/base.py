@@ -1,7 +1,7 @@
 """
 Base settings to build other settings files upon.
 """
-
+from django.utils.translation import gettext_lazy as _
 from pathlib import Path
 
 import environ
@@ -289,3 +289,9 @@ SOCIALACCOUNT_ADAPTER = (
 
 # Your stuff...
 # ------------------------------------------------------------------------------
+LANGUAGES = [
+    ('de', _('German')),
+    ('en', _('English')),
+    ('fr', _('French')),
+    ('es', _('Spanish')),
+]

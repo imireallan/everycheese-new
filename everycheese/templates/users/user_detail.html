@@ -13,6 +13,9 @@
       {% if object.name %}
         <p>{{ object.name }}</p>
       {% endif %}
+      {% if object.bio %}
+        <div>{{ object.bio|linebreaksbr }}</div>
+      {% endif %}
     </div>
   </div>
 
